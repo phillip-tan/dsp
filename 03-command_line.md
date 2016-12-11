@@ -9,7 +9,25 @@ tutorial](https://web.archive.org/web/20160708171659/http://cli.learncodethehard
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+pwd print working directory
+mkdir make directory
+cd change directory
+rmdir remove directory
+pushd push directory
+popd pop directory
+cp copy a file or directory
+mv move a file or directory
+less page through a file
+cat print the whole file
+xargs execute arguments
+find find files
+grep find things inside files
+man read a manual page
+env look at your environment
+echo print some arguments
+export export/set a new environment variable
+sudo become super user
 
 ---
 
@@ -20,11 +38,17 @@ What do the following commands do:
 `ls -a`  
 `ls -l`  
 `ls -lh`  
-`ls -lah`  
+`ls -lah` 
 `ls -t`  
 `ls -Glp`  
-
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+`ls`  list directory.
+`ls -a`  displays all files.
+`ls -l`  displays the long format listing.
+`ls -lh`  list files that show sizes in human readable format.
+`ls -lah`  list all files that show sizes in human readable format.
+`ls -t`  displays newest files first. (based on timestamp)
+`ls -Glp`  inhibits display of group information and uses long listing format to append indicator to entries.
 
 ---
 
@@ -32,7 +56,12 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+'ls -r' displays files in reverse order.
+'ls -m' displays the names as a comma-separated list.
+'ls -u' displays files by the file access time.
+'ls -d' displays only directories.
+'ls -1' displays each entry on a line.
 
 ---
 
@@ -40,7 +69,8 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 'xargs' executes arguments. More specifically, it executes the same command on a bunch of items in order. For example, I can sequence a list of numbers while simultaneously listing out each one as an individual entry next to a specific word. It would look something like 
+'seq 10 | xargs -n 1 echo "Hello". 'xargs' allows me, entirely at the command line, perform the same command a bunch of times in order. 
 
  
 
