@@ -36,7 +36,24 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions is a tool that can be used to transform anything iterable into another list. The new list can have elements that have been conditionally included and each element can be transformed as needed.
+For example, instead of using a for loop to append a list of odd numbers and multiply each element by three, one could use list comprehension to improve the syntax and speed. 
+odds_tripled = [n * 3 for n in numbers if n % 2 == 1] 
+As for an equivalent to the list comprehension example, using 'map' and 'filter', one could reference the following example:
+odds_tripled = map(lambda n: n * 3, filter(lambda n: n % 2 == 1, numbers))
+Between list comprehensions and 'map' (and 'filter'), their difference in speed differs minimally no matter the scenario in which one is deemed quantitatively faster. The main advantage could be argued in favor of list comprehensions because the syntax is more direct.
+An example of set comprehension by transforming the following code that takes the first letter in a sequence of words:
+first_letter = set()
+for w in words:
+  first_letter.add(w[0])
+Transform using set comprehension:
+first_letter = {w[0] for w in words}
+An example of dictionary comprehension by transforming the following code that swaps the keys and values from an original:
+flip = {}
+for key, value in original.items():
+  flip[value] = key
+Transform using dictionary comprehension:
+flip = {value: key for key, value in original.items()}
 
 ---
 
