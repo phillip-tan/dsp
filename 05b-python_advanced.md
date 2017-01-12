@@ -4,7 +4,7 @@
 
 This question has multiple parts, and will take **20+ hours** to complete, depending on your python proficiency level.  Knowing these skills will be extremely beneficial during the first few weeks of the bootcamp.
 
-For Part 1, use of regular expressions is optional.  Work can be completed using a programming approach of your preference. 
+For Part 1, use of regular expressions is optional.  Work can be completed using a programming approach of your preference.
 
 ---
 
@@ -12,7 +12,7 @@ The data file represents the [Biostats Faculty List at University of Pennsylvani
 
 This data is available in this file:  [faculty.csv](python/faculty.csv)
 
---- 
+---
 
 ###Part I - Regular Expressions  
 
@@ -67,7 +67,9 @@ faculty_dict = { 'Ellenberg': [['Ph.D.', 'Professor', 'sellenbe@upenn.edu'], ['P
 ```
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> Putt: [[' PhD ScD', 'Professor of Biostatistics', 'mputt@mail.med.upenn.edu']]
+Feng: [[' Ph.D', 'Assistant Professor of Biostatistics', 'ruifeng@upenn.edu']]
+Bilker: [['Ph.D.', 'Professor of Biostatistics', 'warren@upenn.edu']]
 
 ####Q7.  The previous dictionary does not have the best design for keys.  Create a new dictionary with keys as:
 
@@ -77,17 +79,54 @@ professor_dict = {('Susan', 'Ellenberg'): ['Ph.D.', 'Professor', 'sellenbe@upenn
 
 Print the first 3 key and value pairs of the dictionary:
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> ('Yimei', 'Li'): [[' Ph.D.', 'Assistant Professor of Biostatistics', 'liy3@email.chop.edu']]
+('Hongzhe', 'Li'): [[' Ph.D', 'Professor of Biostatistics', 'hongzhe@upenn.edu']]
+('Justine', 'Shults'): [[' Ph.D.', 'Professor of Biostatistics', 'jshults@mail.med.upenn.edu']]
 
 ####Q8.  It looks like the current dictionary is printing by first name.  Print out the dictionary key value pairs based on alphabetical orders of the last name of the professors
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> ('Bellamy', 'Scarlett'): [[' Sc.D.', 'Associate Professor of Biostatistics', 'bellamys@mail.med.upenn.edu']]
+('Bilker', 'Warren'): [['Ph.D.', 'Professor of Biostatistics', 'warren@upenn.edu']]
+('Bryan', 'Matthew'): [[' PhD', 'Assistant Professor of Biostatistics', 'bryanma@upenn.edu']]
+('Chen', 'Jinbo'): [[' Ph.D.', 'Associate Professor of Biostatistics', 'jinboche@upenn.edu']]
+('Ellenberg', 'Susan'): [[' Ph.D.', 'Professor of Biostatistics', 'sellenbe@upenn.edu']]
+('Ellenberg', 'Jonas'): [[' Ph.D.', 'Professor of Biostatistics', 'jellenbe@mail.med.upenn.edu']]
+('Feng', 'Rui'): [[' Ph.D', 'Assistant Professor of Biostatistics', 'ruifeng@upenn.edu']]
+('French', 'Benjamin'): [[' PhD', 'Associate Professor of Biostatistics', 'bcfrench@mail.med.upenn.edu']]
+('Gimotty', 'Phyllis'): [[' Ph.D', 'Professor of Biostatistics', 'pgimotty@upenn.edu']]
+('Guo', 'Wensheng'): [[' Ph.D', 'Professor of Biostatistics', 'wguo@mail.med.upenn.edu']]
+('Hsu', 'Yenchih'): [[' Ph.D.', 'Assistant Professor of Biostatistics', 'hsu9@mail.med.upenn.edu']]
+('Hubbard', 'Rebecca'): [[' PhD', 'Associate Professor of Biostatistics', 'rhubb@mail.med.upenn.edu']]
+('Hwang', 'Wei-Ting'): [[' Ph.D.', 'Associate Professor of Biostatistics', 'whwang@mail.med.upenn.edu']]
+('Joffe', 'Marshall'): [[' MD MPH Ph.D', 'Professor of Biostatistics', 'mjoffe@mail.med.upenn.edu']]
+('Landis', 'J.'): [[' B.S.Ed. M.S. Ph.D.', 'Professor of Biostatistics', 'jrlandis@mail.med.upenn.edu']]
+('Li', 'Hongzhe'): [[' Ph.D', 'Professor of Biostatistics', 'hongzhe@upenn.edu']]
+('Li', 'Yimei'): [[' Ph.D.', 'Assistant Professor of Biostatistics', 'liy3@email.chop.edu']]
+('Li', 'Mingyao'): [[' Ph.D.', 'Associate Professor of Biostatistics', 'mingyao@mail.med.upenn.edu']]
+('Localio', 'A.'): [[' JD MA MPH MS PhD', 'Associate Professor of Biostatistics', 'rlocalio@upenn.edu']]
+('Mitra', 'Nandita'): [[' Ph.D.', 'Associate Professor of Biostatistics', 'nanditam@mail.med.upenn.edu']]
+('Morales', 'Knashawn'): [[' Sc.D.', 'Associate Professor of Biostatistics', 'knashawn@mail.med.upenn.edu']]
+('Propert', 'Kathleen'): [[' Sc.D.', 'Professor of Biostatistics', 'propert@mail.med.upenn.edu']]
+('Putt', 'Mary'): [[' PhD ScD', 'Professor of Biostatistics', 'mputt@mail.med.upenn.edu']]
+('Ratcliffe', 'Sarah'): [[' Ph.D.', 'Associate Professor of Biostatistics', 'sratclif@upenn.edu']]
+('Ross', 'Michelle'): [[' PhD', 'Assistant Professor is Biostatistics', 'michross@upenn.edu']]
+('Roy', 'Jason'): [[' Ph.D.', 'Associate Professor of Biostatistics', 'jaroy@mail.med.upenn.edu']]
+('Sammel', 'Mary'): [[' Sc.D.', 'Professor of Biostatistics', 'msammel@cceb.med.upenn.edu']]
+('Shaw', 'Pamela'): [[' PhD', 'Assistant Professor of Biostatistics', 'shawp@upenn.edu']]
+('Shinohara', 'Russell'): [['0', 'Assistant Professor of Biostatistics', 'rshi@mail.med.upenn.edu']]
+('Shou', 'Haochang'): [[' Ph.D.', 'Assistant Professor of Biostatistics', 'hshou@mail.med.upenn.edu']]
+('Shults', 'Justine'): [[' Ph.D.', 'Professor of Biostatistics', 'jshults@mail.med.upenn.edu']]
+('Stephens', 'Alisa'): [[' Ph.D.', 'Assistant Professor of Biostatistics', 'alisaste@mail.med.upenn.edu']]
+('Troxel', 'Andrea'): [[' ScD', 'Professor of Biostatistics', 'atroxel@mail.med.upenn.edu']]
+('Xiao', 'Rui'): [[' PhD', 'Assistant Professor of Biostatistics', 'rxiao@mail.med.upenn.edu']]
+('Xie', 'Sharon'): [[' Ph.D.', 'Associate Professor of Biostatistics', 'sxie@mail.med.upenn.edu']]
+('Xie', 'Dawei'): [[' PhD', 'Assistant Professor of Biostatistics', 'dxie@upenn.edu']]
+('Yang', 'Wei'): [[' Ph.D.', 'Assistant Professor of Biostatistics', 'weiyang@mail.med.upenn.edu']]
 
 Place your code in this file: [advanced_python_dict.py](python/advanced_python_dict.py)
 
---- 
+---
 
 If you're all done and looking for an extra challenge, then try the below problem:  
 
 ### [Markov](python/markov.py) (Optional)
-
